@@ -982,7 +982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83fcf82957452fc45895f6c8b0732d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  growAmount: 10
+  growAmount: 1
   gridArea: {fileID: 864387895}
 --- !u!1 &1431457602
 GameObject:
