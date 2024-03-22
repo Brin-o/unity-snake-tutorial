@@ -3,6 +3,8 @@
 [RequireComponent(typeof(BoxCollider2D))]
 public class Food : MonoBehaviour
 {
+
+    public int growAmount = 1;
     public Collider2D gridArea;
 
     private Snake snake;
@@ -48,6 +50,15 @@ public class Food : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         RandomizePosition();
+        
+        if (other.gameObject.CompareTag("Player"))
+        {
+            for(int i = 0; i < growAmount; i++)
+            {
+                print("growing");
+                snake.Grow();
+            }
+        }
     }
 
 }
