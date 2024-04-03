@@ -96,7 +96,7 @@ public class Snake : MonoBehaviour
     public void ResetState()
     {
         direction = Vector2Int.right;
-        transform.position = Vector3.zero;
+        //transform.position = Vector3.zero;
 
         // Start at 1 to skip destroying the head
         for (int i = 1; i < segments.Count; i++)

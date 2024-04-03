@@ -55,7 +55,7 @@ public class Food : MonoBehaviour
         {
             for(int i = 0; i < growAmount; i++)
             {
-                print("growing");
+                //print("growing");
                 snake.Grow();
             }
         }
